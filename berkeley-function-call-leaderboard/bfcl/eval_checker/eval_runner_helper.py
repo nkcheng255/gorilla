@@ -89,6 +89,18 @@ COLUMNS_COMBINED = [
 ]
 
 MODEL_METADATA_MAPPING = {
+    "o1-preview-2024-09-12": [
+        "o1-preview-2024-09-12 (Prompt)",
+        "https://openai.com/index/introducing-openai-o1-preview/",
+        "OpenAI",
+        "Proprietary",
+    ],
+    "o1-mini-2024-09-12": [
+        "o1-mini-2024-09-12 (Prompt)",
+        "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/",
+        "OpenAI",
+        "Proprietary",
+    ],
     "gpt-4o-2024-08-06": [
         "GPT-4o-2024-08-06 (Prompt)",
         "https://openai.com/index/hello-gpt-4o/",
@@ -533,18 +545,30 @@ MODEL_METADATA_MAPPING = {
         "Salesforce",
         "cc-by-nc-4.0",
     ],
-    "google/gemma-2-2b-it": [
-        "Gemma-2-2.6B-it (Prompt)",
-        "https://huggingface.co/google/gemma-2b-it",
-        "Google",
-        "gemma-terms-of-use",
+    "Salesforce/xLAM-7b-r": [
+        "xLAM-7b-r (FC)",
+        "https://huggingface.co/Salesforce/xLAM-7b-r",
+        "Salesforce",
+        "cc-by-nc-4.0",
     ],
-    "microsoft/Phi-3.5-mini-instruct": [
-        "Phi-3.5-mini-instruct (Prompt)",
-        "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
-        "Microsoft",
-        "MIT",
-    ]    
+    "Salesforce/xLAM-8x7b-r": [
+        "xLAM-8x7b-r (FC)",
+        "https://huggingface.co/Salesforce/xLAM-8x7b-r",
+        "Salesforce",
+        "cc-by-nc-4.0",
+    ],
+    "Salesforce/xLAM-8x22b-r": [
+        "xLAM-8x22b-r (FC)",
+        "https://huggingface.co/Salesforce/xLAM-8x22b-r",
+        "Salesforce",
+        "cc-by-nc-4.0",
+    ],
+    "MadeAgents/Hammer-7b": [
+        "Hammer-7b (FC)",
+        "https://huggingface.co/MadeAgents/Hammer-7b",
+        "MadeAgents",
+        "cc-by-nc-4.0",
+    ]
 }
 
 INPUT_PRICE_PER_MILLION_TOKEN = {
@@ -573,6 +597,8 @@ INPUT_PRICE_PER_MILLION_TOKEN = {
     "mistral-small-2402-FC-Auto": 1,
     "mistral-small-2402": 1,
     "mistral-tiny-2312": 0.25,
+    "o1-preview-2024-09-12": 15,
+    "o1-mini-2024-09-12": 3,
     "gpt-4o-2024-05-13-FC": 5,
     "gpt-4o-2024-05-13": 5,
     "gpt-4o-2024-08-06-FC": 2.5,
@@ -627,6 +653,8 @@ OUTPUT_PRICE_PER_MILLION_TOKEN = {
     "mistral-small-2402-FC-Any": 3,
     "mistral-small-2402-FC-Auto": 3,
     "mistral-tiny-2312": 0.25,
+    "o1-preview-2024-09-12": 60,
+    "o1-mini-2024-09-12": 12,
     "gpt-4o-2024-05-13-FC": 15,
     "gpt-4o-2024-05-13": 15,
     "gpt-4o-2024-08-06-FC": 10,
@@ -685,7 +713,10 @@ NO_COST_MODELS = [
     "ibm-granite/granite-20b-functioncalling",
     "THUDM/glm-4-9b-chat",
     "Salesforce/xLAM-1b-fc-r",
-    "Salesforce/xLAM-7b-fc-r"
+    "Salesforce/xLAM-7b-fc-r",
+    "Salesforce/xLAM-7b-r",
+    "Salesforce/xLAM-8x7b-r",
+    "Salesforce/xLAM-8x22b-r",
 ]
 
 # Price got from AZure, 22.032 per hour for 8 V100, Pay As You Go Total Price
